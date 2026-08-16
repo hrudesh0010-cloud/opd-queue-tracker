@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary-color: #0d9488;
+    --primary-hover: #085c55;
+    --accent-color: #06b6d4;
+    --bg-gradient-from: #020617;
+    --bg-gradient-to: #0f172a;
+    --card-bg: rgba(15, 23, 42, 0.75);
+    --card-border: rgba(255, 255, 255, 0.1);
+  }
+}
+
+/* Glassmorphism Styles */
+.glass-panel {
+  background: var(--card-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--card-border);
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.glass-input {
+  background: rgba(10, 23, 55, 0.511);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #f8fafc;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(87, 13, 148, 0.25);
+  background: rgba(15, 23, 42, 0.85);
+}
+
+/* Custom Glow Effects */
+.glow-primary {
+  box-shadow: 0 0 30px rgba(98, 13, 148, 0.35);
+}
+
+.glow-accent {
+  box-shadow: 0 0 30px rgba(40, 7, 98, 0.35);
+}
+
+/* Background animated gradient */
+.mesh-gradient-bg {
+  background-color: #0a0010;
+  background-image:
+    radial-gradient(at 0% 0%, rgba(126, 34, 206, 0.3) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(168, 85, 247, 0.2) 0px, transparent 50%),
+    radial-gradient(at 50% 100%, rgba(59, 7, 100, 0.25) 0px, transparent 50%);
+}
+/* Hide scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
