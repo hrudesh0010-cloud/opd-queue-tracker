@@ -56,6 +56,6 @@ Open **`http://localhost:5173/`** in your browser.
 
 ## 🎨 Developer Customization Features Built-in
 
-- **Google SSO Modal**: Edit [`src/components/auth/GoogleAuthModal.jsx`](file:///C:/Users/Hrudesh/.gemini/antigravity/scratch/Opd%20Queue%20Tracker/src/components/auth/GoogleAuthModal.jsx) to modify Google OAuth flow.
+- **Google SSO Modal**: Edit [`src/components/auth/GoogleAuthModal.jsx`](file:///C:/Users/xyz\\.gemini/antigravity/scratch/Opd%20Queue%20Tracker/src/components/auth/GoogleAuthModal.jsx) to modify Google OAuth flow.
 - **Mobile OTP Flow**: Edit [`src/components/auth/PhoneOtpView.jsx`](file:///C:/Users/Hrudesh/.gemini/antigravity/scratch/Opd%20Queue%20Tracker/src/components/auth/PhoneOtpView.jsx) to tweak country codes or OTP digit validation.
 - **Dev Live Drawer**: Click **"⚡ Dev Customizer"** in the live web app to change hospital names, theme colors, or export JSON configs live.
